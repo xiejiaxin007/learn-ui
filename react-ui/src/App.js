@@ -5,7 +5,6 @@
  * @Date: 2022-02-23 16:12:48
  * @desc: 
  */
-import './App.css';
 
 function App() {
   return (
