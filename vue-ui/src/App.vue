@@ -8,13 +8,13 @@
 <template>
   <div class="source">
     <div class="item">
-      <xie-button size="small" />
+      <xie-button size="small" /> <xie-button size="small" type="primary" />
     </div>
     <div class="item">
-      <xie-button size="default" />
+      <xie-button size="default" /> <xie-button size="small" type="primary" />
     </div>
     <div class="item">
-      <xie-button size="large" />
+      <xie-button size="large" /> <xie-button size="small" type="primary" />
     </div>
   </div>
 </template>

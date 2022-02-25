@@ -19,7 +19,7 @@ defineProps({
   // primary / success / warning / danger / info / text
   type: {
     type: String,
-    default: 'primary'
+    default: 'default'
   }
 })
 </script>
@@ -27,17 +27,13 @@ defineProps({
 <style scoped>
 .xjx-ui {
   display: inline-block;
+  margin-right: 5px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   line-height: 1;
-  background-color: #fff;
   font-size: 14px;
   cursor: pointer;
   border-radius: 4px;
-}
-.xjx-ui:hover {
-  color: #409eff;
-  border-color: #409eff;
 }
 .default--size {
   padding: 10px 12px;
@@ -47,5 +43,24 @@ defineProps({
 }
 .large--size {
   padding: 12px 14px;
+}
+.default--type {
+  color: #606266;
+  border-color: #ccc;
+  background-color: #fff;
+}
+.default--type:hover {
+  color: #409eff;
+  border-color: #409eff;
+}
+.primary--type {
+  color: #fff;
+  border-color: #409eff;
+  background-color: #409eff;
+}
+.primary--type:hover {
+  color: #fff;
+  border-color: #66b1ff;
+  background-color: #66b1ff;
 }
 </style>
