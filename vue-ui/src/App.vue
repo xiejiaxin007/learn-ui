@@ -6,17 +6,35 @@
  * @desc: 参考：https://juejin.cn/post/7006108454028836895
 -->
 <template>
+<div class="container">
   <div class="source">
     <div class="item">
-      <xie-button size="small" /> <xie-button size="small" type="primary" />
+      <xie-button size="default">正常按钮</xie-button>
+      <xie-button size="default" type="primary">正常按钮</xie-button>
+      <xie-button size="default" type="success">正常按钮</xie-button>
     </div>
     <div class="item">
-      <xie-button size="default" /> <xie-button size="small" type="primary" />
+      <xie-button size="default" plain>朴素按钮</xie-button>
+      <xie-button size="default" type="primary" plain>朴素按钮</xie-button>
+      <xie-button size="default" type="success" plain>朴素按钮</xie-button>
     </div>
     <div class="item">
-      <xie-button size="large" /> <xie-button size="small" type="primary" />
+      <xie-button size="default" round>圆角按钮</xie-button>
+      <xie-button size="default" type="primary" round>圆角按钮</xie-button>
+      <xie-button size="default" type="success" round>圆角按钮</xie-button>
+    </div>
+    <div class="item">
+      <xie-button size="default" circle>
+        <template v-slot:icon>
+          <i class="icon iconfont iconsearch"></i>
+        </template>
+      </xie-button>
+    </div>
+    <div class="item">
+      <xie-button size="default" disabled>禁用</xie-button>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>

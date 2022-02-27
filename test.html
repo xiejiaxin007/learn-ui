@@ -14,23 +14,24 @@
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <div>
-      <h1>testteststest</h1>
-      <div>
-        <h1>testteststest</h1>
-        <div>
-          <h1>testteststest</h1>
-        </div>
-      </div>
-    </div>
-  </div>
+  <button id="btn">打开一个子窗口</button>
+  <button id="btn1">修改session</button>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      console.log('DOM now：' + new Date().getTime());
-    })
-    console.log(typeof a)
+    sessionStorage.setItem('xjx', JSON.stringify({
+      a: 1,
+      b: 2
+    }));
+    btn.onclick = function() {
+      // 打开一个新窗口，测试session
+      let obj = window.open('./test1.html');
+      obj.opener = null
+    }
+    btn1.onclick = function() {
+      sessionStorage.setItem('xjx', JSON.stringify({
+        a: 2,
+        b: 2
+      }))
+    }
   </script>
-  <script src="http://127.0.0.1:8000/gb-web/static/test.js"></script>
 </body>
 </html>
